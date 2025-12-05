@@ -1,10 +1,11 @@
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-import Login from './components/pages/Login';
-import Register from './components/pages/Register';
-import Notes from './components/pages/Notes';
-import Users from './components/pages/Users';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Notes from './pages/Notes';
+import Users from './pages/Users';
+// import Users from './components/pages/Users';
 
 const ProtectedRoute: React.FC<{ children: React.ReactElement }> = ({ children }) => {
   const token = localStorage.getItem('token');
